@@ -1,11 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Agriculture</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap">
 </head>
+
 <body>
-    
+    <header class="container-fluid shadow-xl h-20 fixed bg-emerald-100">
+        <div class="container m-0 h-20 bg-emerald-100 ">
+            <div class="col-12 h-20 bg-emerald-100">
+                <nav class="navbar navbar-expand-lg h-20 bg-emerald-100">
+                    <a href="home.html" class="navbar-brand h-20 justify-between items-center flex">
+                        <img class="w-30 h-30 " src="images/logo.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobailemenu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse justify-center -ml-30  font-[700] manrope " style="visibility: visible;"
+                        id="navbarNav">
+                        <ul class="navbar-nav gap-4">
+                            <li class="nav-item hover:border-b-2 border-[#57c472]">
+                                <a href="home.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item hover:border-b-2 border-[#57c472]">
+                                <a href="about.html" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item hover:border-b-2 border-[#57c472]">
+                                <a href="services.html" class="nav-link">Services</a>
+                            </li>
+                            <li class="nav-item hover:border-b-2 border-[#57c472]">
+                                <a href="shop.html" class="nav-link">Shop</a>
+                            </li>
+                            <li class="nav-item hover:border-b-2 border-[#57c472]">
+                                <a href="project.html" class="nav-link">Projects</a>
+                            </li>
+                            <li class="nav-item hover:border-b-2 border-[#57c472]">
+                                <a href="shades.html" class="nav-link">Shades</a>
+                            </li>
+                            <li class="nav-item hover:border-b-2 border-[#57c472]">
+                                <a href="contact.html" class="nav-link">Contact</a>
+                            </li>
+
+                        </ul>
+
+                        <ul class="navbar-nav gap-2 -right-20 absolute flex">
+                            <div class="shadow border  rounded-lg  border-white bg-white">
+                                <form action="/action_page.php" class="h-8">
+                                    <input type="text" placeholder="Search.." name="search" class="bg-white  ">
+                                    <button type="submit" class="h-8.5 bg-gray-300 w-8.5"><i class="fa fa-search "></i></button>
+                                </form>
+                            </div>
+                        </ul>    
+                    </div>
+                    <i class="fa-solid fa-circle-user flex absolute -right-29 text-2xl"></i>
+                </nav>
+
+                <div class="offcanvas offcanvas-start bg-gray-900 flex flex-col" tabindex="-1" id="mobailemenu"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header justify-normal bg-green-200 ">
+                        <img class="w-24 h-24 bg-none -m-10" src="images/logo.png" alt="">
+                        <div class="shadow border  rounded-lg items-center  border-white bg-white">
+                            <form action="/action_page.php" class="h-8 w-40 flex ">
+                                <input type="text" placeholder="Search" name="search" class="bg-white w-40 ">
+                                <button type="submit" class="h-8 bg-gray-300 w-10 border-2 border-gray-300"><i class="fa fa-search "></i></button>
+                            </form>
+                        </div>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body bg-gray-900">
+                        <ul class="flex flex-col gap-10 pt-3 ps-0 ">
+                           <a class=" text-xl text-white hover:text-gray-400" style="text-decoration: none;" href="home.html"> <li class="font-[500] manrope ">home</li> </a>
+                           <a class=" text-xl text-white hover:text-gray-400" style="text-decoration: none;" href="about.html"> <li class="font-[500] manrope ">About</li> </a>
+                           <a class=" text-xl text-white hover:text-gray-400" style="text-decoration: none;" href="services.html"> <li class="font-[500] manrope ">services</li> </a>
+                           <a class=" text-xl text-white hover:text-gray-400" style="text-decoration: none;" href="shop.html"> <li class="font-[500] manrope ">shop</li> </a>
+                           <a class=" text-xl text-white hover:text-gray-400" style="text-decoration: none;" href="project.html"> <li class="font-[500] manrope ">Projects</li> </a>
+                           <a class=" text-xl text-white hover:text-gray-400" style="text-decoration: none;" href="shades.html"> <li class="font-[500] manrope ">shades</li> </a>
+                           <a class=" text-xl text-white hover:text-gray-400" style="text-decoration: none;" href="contact.html"> <li class="font-[500] manrope ">contact</li> </a>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
