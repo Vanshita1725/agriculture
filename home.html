@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header class="container-fluid shadow-xl h-20 fixed bg-emerald-100">
+    <header class="container-fluid shadow-xl h-20 fixed bg-emerald-100 z-10">
         <div class="container m-0 h-20 bg-emerald-100 ">
             <div class="col-12 h-20 bg-emerald-100">
                 <nav class="navbar navbar-expand-lg h-20 bg-emerald-100">
@@ -52,9 +52,9 @@
                         </ul>
 
                         <ul class="navbar-nav gap-2 -right-20 absolute flex">
-                            <div class="shadow border  rounded-lg  border-white bg-white">
+                            <div class="shadow  bg-white">
                                 <form action="/action_page.php" class="h-8">
-                                    <input type="text" placeholder="Search.." name="search" class="bg-white  ">
+                                    <input type="text" placeholder="Search.." name="search" class="bg-white ps-1">
                                     <button type="submit" class="h-8.5 bg-gray-300 w-8.5"><i class="fa fa-search "></i></button>
                                 </form>
                             </div>
@@ -94,7 +94,10 @@
     </header>
     <main>
         <section>
-              <img class="w-full" src="images/background.jpg" alt=""> 
+            <div>
+              <img class="w-full bg-black h-140 backdrop-opacity-50" src="images/background.jpg" alt=""> 
+              <p class="left-15 w-xl text-5xl text-white tracking-wider font-[700] manrope absolute flex top-80 ">Welcome to Agriculture farming</p>
+            </div>     
         </section>    
     </main>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
